@@ -45,10 +45,10 @@
           - '/etc/localtime:/etc/localtime:ro'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/external:/external'  
-          - '/opt/appdata/{{pgrole}}:/config'
-          - '/opt/appdata/{{pgrole}}:/data'
-          - '/opt/appdata/{{pgrole}}:/generated'
-          - '/opt/appdata/{{pgrole}}:/cache'
+          - '/opt/appdata/{{pgrole}}/config:/config'
+          - '/opt/appdata/{{pgrole}}/data:/data'
+          - '/opt/appdata/{{pgrole}}/generated:/generated'
+          - '/opt/appdata/{{pgrole}}/cache:/cache'
 
     - name: 'Setting PG ENV'
       set_fact:
