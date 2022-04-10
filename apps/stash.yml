@@ -59,7 +59,7 @@
           STASH_GENERATED: '/generated/'
           STASH_METADATA: '/metadata/'
           STASH_CACHE: '/cache/'
-          STASH_CONFIG_FILE: '/config/'
+          STASH_CONFIG_FILE: '/config/config.yml'
           
     # MAIN SCRIPT ##############################################################
 
