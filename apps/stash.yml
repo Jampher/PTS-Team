@@ -45,7 +45,7 @@
           - '/etc/localtime:/etc/localtime:ro'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/external:/external'  
-          - '/opt/appdata/{{pgrole}}/config:/config'
+          - '/opt/appdata/{{pgrole}}/config:/root/.stash'
           - '/opt/appdata/{{pgrole}}/data:/data'
           - '/opt/appdata/{{pgrole}}/generated:/generated'
           - '/opt/appdata/{{pgrole}}/cache:/cache'
@@ -55,11 +55,11 @@
         pg_env:
           PUID: '1000'
           PGID: '1000'
-          STASH_STASH: '/data'
-          STASH_GENERATED: '/generated'
-          STASH_METADATA: '/metadata'
-          STASH_CACHE: '/cache'
-          STASH_CONFIG_FILE: '/config'
+          STASH_STASH: '/data/'
+          STASH_GENERATED: '/generated/'
+          STASH_METADATA: '/metadata/'
+          STASH_CACHE: '/cache/'
+          STASH_CONFIG_FILE: '/config/'
 
     # MAIN SCRIPT ##############################################################
 
