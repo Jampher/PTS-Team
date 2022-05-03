@@ -45,8 +45,8 @@
     - name: 'Setting {{pgrole}} ENV'
       set_fact:
         pg_env:
-          PUID: '1000'
-          PGID: '1000'
+          PUID: ''
+          PGID: ''
 	  
     # MAIN DEPLOYMENT #############################################################
     - name: 'Deploying {{pgrole}}'
