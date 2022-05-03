@@ -41,12 +41,6 @@
           - '/opt/appdata/{{pgrole}}:/name of folder'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/etc/localtime:/etc/localtime:ro'
-
-    - name: 'Setting {{pgrole}} ENV'
-      set_fact:
-        pg_env:
-          PUID: ''
-          PGID: ''
 	  
     # MAIN DEPLOYMENT #############################################################
     - name: 'Deploying {{pgrole}}'
