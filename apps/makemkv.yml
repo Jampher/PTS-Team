@@ -57,10 +57,10 @@
           UID: '1000'
           GID: '1000'
           MAKEMKV_KEY: 'M-7A4Qoc6pdbBNp_Q0l5Jo4mJvWkHEUoa7_6i3QOJFkpV3m0hd_URDUNSA2sCwg00nZp'
-          AUTO_DISC_RIPPER: 0
-          ENABLE_CJK_FONT: 1
-          CLEAN_TMP_DIR: 1
-          KEEP_APP_RUNNING: 1
+          AUTO_DISC_RIPPER: '0'
+          ENABLE_CJK_FONT: '1'
+          CLEAN_TMP_DIR: '1'
+          KEEP_APP_RUNNING: '1'
 
     # MAIN DEPLOYMENT #############################################################
 
