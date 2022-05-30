@@ -16,7 +16,7 @@
         pgrole: 'makemkv'
         intport: '5800'
         extport: '5800'
-        image: 'stashapp/stash:development'
+        image: 'jlesage/makemkv:latest'
 
     - name: 'Including cron job'
       include_tasks: '/opt/communityapps/apps/_core.yml'
