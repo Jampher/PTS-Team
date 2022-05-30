@@ -45,13 +45,24 @@
           - '/etc/localtime:/etc/localtime:ro'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/external:/external'  
-          - '/opt/appdata/{{pgrole}}:/config'
+          - '/opt/appdata/{{pgrole}}/config:/config'
+          - '/opt/appdata/{{pgrole}}/tmp:/tmp'
 
     - name: 'Setting PG ENV'
       set_fact:
         pg_env:
           PUID: '1000'
           PGID: '1000'
+          MAKEMKV_KEY: 'M-7A4Qoc6pdbBNp_Q0l5Jo4mJvWkHEUoa7_6i3QOJFkpV3m0hd_URDUNSA2sCwg00nZp'
+          APP_NAME: 'MakeMKV'
+          APP_USER: 'app'
+          DISPLAY: ':0'
+          DISPLAY_HEIGHT:	'768'
+          DISPLAY_WIDTH: '1280'
+          XDG_CACHE_HOME:	'/config/xdg/cache'
+          XDG_CONFIG_HOME: '/config/xdg/config'
+          XDG_DATA_HOME: '/config/xdg/data'
+          XDG_RUNTIME_DIR: '/tmp/run/user/app'
           
     # MAIN SCRIPT ##############################################################
 
