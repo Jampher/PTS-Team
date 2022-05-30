@@ -45,7 +45,6 @@
           - '/etc/localtime:/etc/localtime:ro'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/external:/external'  
-          - '/mnt:/mnt'
           - '/opt/appdata/{{pgrole}}:/config'
 
     - name: 'Setting PG ENV'
